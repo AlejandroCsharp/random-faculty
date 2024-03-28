@@ -1,0 +1,228 @@
+\documentclass{exam}
+\usepackage{pst-eucl}
+\usepackage{graphicx} 
+\usepackage{changepage, amsmath, amssymb, pgfplots, tikz}
+\usepgfplotslibrary{groupplots}
+\psset{PointName=none,PointSymbol=none}
+\usetikzlibrary{arrows.meta}	
+\usetikzlibrary{calc,patterns,angles,quotes}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{arrows.meta}
+\usepackage{fullpage}
+\usepackage{ulem}
+\usepackage{tabularx}
+\usetikzlibrary{calc,arrows.meta}
+\usepackage[most]{tcolorbox}
+\definecolor{p1}{HTML}{caf0f8}
+\definecolor{p2}{HTML}{ade8f4}
+\definecolor{p3}{HTML}{90e0ef}
+\definecolor{p4}{HTML}{48cae4}
+\definecolor{p5}{HTML}{00b4d8}
+\definecolor{p6}{HTML}{0096c7}
+\definecolor{p7}{HTML}{0077b6}
+\definecolor{p8}{HTML}{023e8a}
+\definecolor{p9}{HTML}{03045e}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{tkz-euclide}
+\colorlet{xcol}{blue!60!black}
+\usepackage{capt-of}
+\definecolor{myred}{HTML}{f44336}
+\definecolor{mypink}{HTML}{e81e63}
+\definecolor{mypurple}{HTML}{9c27b0}
+\definecolor{mydeeppurple}{HTML}{673ab7}
+\definecolor{myindigo}{HTML}{3f51b5}
+\definecolor{myblue}{HTML}{2196f3}
+\definecolor{mylightblue}{HTML}{03a9f4}
+\definecolor{mycyan}{HTML}{00bcd4}
+\definecolor{myteal}{HTML}{009688}
+\definecolor{mygreen}{HTML}{4caf50}
+\definecolor{mylightgreen}{HTML}{8bc34a}
+\definecolor{mylime}{HTML}{cddc39}
+\definecolor{myyellow}{HTML}{ffeb3b}
+\definecolor{myamber}{HTML}{ffc107}
+\definecolor{myorange}{HTML}{ff9800}
+\definecolor{mydeeporange}{HTML}{ff5722}
+\definecolor{mybrown}{HTML}{795548}
+\definecolor{mygray}{HTML}{9e9e9e}
+\definecolor{mybluegray}{HTML}{607d8b}
+\definecolor{pag}{HTML}{293133}
+\usepackage[labelformat=empty]{caption}
+\usepackage{mdframed}
+\newtcolorbox{qq}[2][]{%
+	boxrule=0.75pt,
+	sharp corners,  % Square edges
+	colframe=white,  % Set the color of the outline
+	colback=pag,  % Set the color of the fill
+	coltext=white,
+	#1,
+}
+
+\usepackage{tikz-3dplot}
+\usetikzlibrary{3d,backgrounds,intersections}
+% small fix for canvas is xy plane at z % https://tex.stackexchange.com/a/48776/121799
+\makeatletter
+\tikzoption{canvas is xy plane at z}[]{%
+	\def\tikz@plane@origin{\pgfpointxyz{0}{0}{#1}}%
+	\def\tikz@plane@x{\pgfpointxyz{1}{0}{#1}}%
+	\def\tikz@plane@y{\pgfpointxyz{0}{1}{#1}}%
+	\tikz@canvas@is@plane}
+\makeatother
+
+\usepgfplotslibrary{groupplots}
+
+\tikzset{
+	conditional line/.style 2 args={
+		/utils/exec={\pgfmathsetmacro{\xcoordA}{#1}},
+		/utils/exec={\pgfmathsetmacro{\xcoordB}{#2}},
+		insert path={
+			\ifdim\xcoordA pt>\xcoordB pt
+			(\xcoordA,0) -- (\xcoordB,0)
+			\fi
+		},
+	},
+}
+
+\newcommand{\Logo}{
+	\begin{tikzpicture}[remember picture,overlay]
+		\node at ($(current page.north east) + (-1cm,-1cm)$) {AC};
+	\end{tikzpicture}
+}
+
+\newcommand{\tmpsection}[1]{}
+\let\tmpsection=\section
+\renewcommand{\section}[1]{\tmpsection{#1}\hrule\nobreak}
+
+
+%--------------------------------------------------------------------
+\makeatletter
+\newenvironment{multichoices}[1][2]{%
+	\begin{multicols}{#1}}{%
+\end{multicols}}
+\makeatother
+
+
+\newcommand{\framedtext}[1]{%
+	\par%
+	\noindent\fbox{%
+		\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{#1}%
+	}%
+}
+%--------------------------------------------------------------------
+
+% Portrail
+
+
+\title{Ejercicios Evaluativos}
+\date{\today}
+\author{Prof. Alejandro Ceccheto}
+
+
+
+\begin{document}
+	%% School Portrail.
+	
+\begin{figure}
+	\centering
+	\includegraphics[width=0.2\linewidth]{C:/Users/somia/Downloads/unnamed}
+\end{figure}
+
+	\maketitle
+	\pagebreak
+	
+	\section{Ejercicios.}
+	\Logo
+	
+	\vspace{1cm}
+	Los siguientes ejercicios no llevan nota, son una forma de aprender de una manera algo distinta.
+	No hace falta que intenten copiarse entre ustedes.
+	
+	\begin{itemize}
+		\item[1. ] Resolver.
+		
+		
+		\begin{equation*}
+			\left\{+5-6-[-2+5+(-3+2)-5]-2+3\right\}-1 =
+		\end{equation*}
+		
+		\vspace{0.5cm}
+		
+		\begin{checkboxes}
+			\begin{multichoices}[3]
+					\choice $\frac{10}{15}$
+					\choice $-\frac{37}{10}$
+					\choice $\frac{4}{5}$
+			\end{multichoices}
+		\end{checkboxes}
+		
+		
+		\item[2. ] Resolver.
+		
+		
+		\begin{equation*}
+			3x -9-8+12x = 2-4x
+		\end{equation*}
+		
+		\vspace{0.5cm}
+		
+		\begin{checkboxes}
+			\begin{multichoices}[3]
+				\choice $\frac{10}{15}$
+				\choice $-\frac{37}{10}$
+				\choice $\frac{4}{5}$
+			\end{multichoices}
+		\end{checkboxes}
+		
+		
+		\item[3. ] Resolver.
+		
+		
+		
+		\begin{equation*}
+			\frac{3}{2} + \frac{4}{5} \left(\frac{2}{3}\right)^{-1} -2 =
+		\end{equation*}
+		
+		\vspace{0.5cm}
+		
+		\begin{checkboxes}
+			\begin{multichoices}[3]
+				\choice $\frac{10}{15}$
+				\choice $-\frac{37}{10}$
+				\choice $\frac{4}{5}$
+			\end{multichoices}
+		\end{checkboxes}
+		
+		
+		\item[4. ] Resolver. 
+		
+		
+		\begin{equation*}
+			\sqrt{\frac{3}{10}x + \frac{8}{5}} = \frac{7}{10}
+		\end{equation*}
+		
+		\vspace{0.5cm}
+		
+		\begin{center}
+			\begin{checkboxes}
+				\begin{multichoices}[3]
+					\choice $\frac{10}{15}$
+					\choice $-\frac{37}{10}$
+					\choice $\frac{4}{5}$
+				\end{multichoices}
+			\end{checkboxes}
+		\end{center}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+\end{document}
