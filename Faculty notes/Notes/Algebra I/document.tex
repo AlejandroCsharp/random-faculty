@@ -11,9 +11,10 @@
 \usetikzlibrary{arrows.meta}
 \usepackage{fullpage}
 \usepackage{xparse,array}
+\usepackage{dsfont}
 \usetikzlibrary{circuits.ee.IEC}
 \usepackage{ulem}
-\usepackage{geometry,graphicx}				% Paquetes adicionales.
+\usepackage{geometry,graphicx}	% Paquetes adicionales.
 \usepackage{subcaption,array}
 \usepackage{multicol,multirow}
 \usepackage{mathtools}
@@ -38,7 +39,8 @@
 \usepackage{multicol}
 \usetikzlibrary{arrows, shapes.gates.logic.US, calc}
 \usetikzlibrary{calc,arrows.meta}
-\usepackage[most]{tcolorbox}
+\usepackage{tcolorbox}
+\usepackage{pst-node}% http://ctan.org/pkg/pst-node
 \definecolor{p1}{HTML}{caf0f8}
 \definecolor{p2}{HTML}{ade8f4}
 \definecolor{p3}{HTML}{90e0ef}
@@ -241,6 +243,30 @@
 \definecolor{bluefill}{RGB}{41, 49, 51}
 \renewcommand\columnseprulecolor{\hspace{50pt}}
 
+% PROPIEDAD DISTRIGUTIVA COMANDO DE FLECHAS
+\newcommand\source[1]{%
+	\tikz[remember picture,baseline,inner sep=0pt] {%
+		\node [name=source,anchor=base]{$#1$};
+	}%
+	\setcounter{target}{0}
+}
+
+\newcounter{target}
+\newcommand\target[1]{%
+	\tikz[remember picture,baseline,inner sep=0pt] {%
+		\node [name=target-\thetarget,anchor=base]{$#1$};
+	}%
+	\stepcounter{target}%
+}
+
+\newcommand\drawarrows{
+	\tikz[remember picture, overlay, bend left=20, -latex] {
+		\foreach \i [evaluate=\i as \n using int(\i-1)] in {1,...,\thetarget} {
+			\draw (source.north) to (target-\n.north);
+		}
+	}
+}
+
 % Portrail
 
 
@@ -337,7 +363,7 @@
 		}{           V V | \bs V \\
 		             V F | \bs F \\
 		             F V | \bs V \\
-		             F F | \bs F \\
+		             F F | \bs V \\
 		}
 		\]
 	\end{minipage}
@@ -439,7 +465,263 @@ Entonces, con estas lógicas algebraicas podemos deducir 3 cosas, si son Tautolo
 Para mas referencias y ejemplos visitar\footnote{Uno de los libros que mas se asemeja a la forma de explicar de la profe. \\
 \url{https://archive.org/details/AlgebraIArmandoRojo/page/n13/mode/2up}}.
 
-  
+
+
+ \section*{Chapter 2: Propiedades.}
+
+En este capitulo veremos como se aplican las propiedades en álgebra, particularmente en proposiciones.
+Para eso particularmente a mi tendriamos que tener en mente las 3 tablas de y,ó e implica.
+
+\begin{center}
+	\[
+	\truthtable{
+		P Q | P \land Q
+	}{  V V | \bs V \bs \\
+	}
+	\]
+	\[
+	\truthtable{
+		P Q | P \lor Q
+	}{  F F | \bs F \bs \\
+	}
+	\]
+	\[
+	\truthtable{
+		P Q | P \Rightarrow Q
+	}{  V F | \bs F \bs \\
+	}
+	\]
+\end{center}
+
+
+\section{Propiedades.}
+Estas son las 3 cosas que tendríamos que tener en mente siempre al momento de operar con condicionales.
+Luego las propiedades hay bastantes una leve lista de ellas seria.
+
+\begin{itemize}
+	\item Propiedad conmutativa.
+	\item Propiedad Distributiva.
+	\item Propiedad Absorción.
+	\item Propiedad Semis-Absorción.
+	\item Propiedad de Morgan.
+\end{itemize}
+Entre muchas otras, estas son las que mas se suelen usar.
+
+\subsection*{Propiedad Distributiva.}
+
+\begin{frm-thm}
+	\begin{equation*}
+		P \land(Q \lor R) \equiv (P \land Q) \lor (P \lor Q)
+	\end{equation*}
+	lo que platea la teoria es que $P$ y (Q O R) es equivalente a (P y R) ó (P ó Q) siendo que la $P$ se reparte entre Q y R.
+\end{frm-thm}
+
+
+\vspace{1cm}
+	\subsubsection*{Ejemplo}
+\begin{center}
+	$\source{(P\lor(Q\vee R))} \equiv \big( \target{(P \land Q)} \lor \target{(P \vee R)} \big)$\drawarrows
+\end{center}
+
+\subsection*{Propiedad Asociativa.}
+
+\begin{frm-thm}
+	\begin{gather*}
+		\big((P \vee Q) \vee R  \big) \equiv \big(P \vee (Q \vee R)\big) \\
+		\big((P \land Q) \land R\big) \equiv \big(p \land (Q \land R)\big)
+	\end{gather*}
+     Planteo de la propiedad, es lo mismo escribir ($P$ ó $Q$) ó $R$ $\Leftrightarrow$ $P$ ó ($Q$ ó $R$) lo mismo sucede si tenemos y´s ($\land$).
+\end{frm-thm}
+
+\section{Propiedades.}
+
+\begin{frm-thm}
+	\begin{gather*}
+		\big(P \land Q\big) \equiv \big(Q \land P\big) \\
+		\big(P \vee Q\big) \equiv \big(Q \vee P\big) \\
+		\big(P \Leftrightarrow Q \big) \equiv \big(Q \Leftrightarrow P\big) \\
+		\big(P \veebar Q\big) \equiv \big(Q \veebar P\big)
+	\end{gather*}
+	 La propiedad plantea que siempre se puede escribir de distinta forma una operacion simepre y cuando esta sea llevada a la simpleza de $n$ y/o/im/ $n$.
+\end{frm-thm}
+
+\vspace{0.5cm}
+
+\subsection*{Negación de \textbf{$\underbrace{Conujuncion / Diyuncion}_\textrm{Propiedad de Morgan}$}.}
+
+\vspace{0.5cm}
+
+ \begin{frm-thm}
+ 	Esta propiedad plantea que si tengo una negación antes que un conjunto, dicha negacion puede negar los dos conjuntos por separado e invertir su unión ($\vee, \land, \Leftarrow$)
+ 	\begin{gather*}
+ 		\sim\big(P \vee Q\big) \equiv \sim P \land \sim Q \\
+ 		\sim\big(P \land Q\big) \equiv \sim P \vee \sim Q
+ 	\end{gather*}
+ \end{frm-thm}
+
+\subsection*{Absorción y Semi-Absorción.}
+
+\begin{center}
+	\begin{tabular}{ | l | l  | p{5cm} |}
+		\hline
+		F = Contradiccion & V = Tautologia \\ \hline
+		$\sim\big(\sim P\big) \equiv P$ & $P \vee \mathds{V} \equiv \mathds{V}$                                           \\ \hline
+		 --- & $P \hspace{3pt}\vee \sim P \equiv \mathds{V}$  \\ \hline
+		$P \hspace{3pt}\land \sim P \equiv \mathds{F}$ &---   \\ \hline
+		$P \hspace{3pt}\land \mathds{F} \equiv F$ &  ---      \\ \hline
+		$P \hspace{3pt}\lor \mathds{F} \equiv P$ & ---        \\
+		
+		\hline
+	\end{tabular}
+\end{center}
+
+\pagebreak
+\section{Propiedades.}
+
+\vspace{0.9cm}
+
+\subsection*{Propiedades de absorción.}
+%% This block is what you'll need to put in your code where you want your picture.
+\begin{center}
+	\begin{tikzpicture}[scale=0.5pt]
+		%% You can adjust the opacity here. For venn diagrams it is convenient to have a low opacity so that you can see intersections
+		\begin{scope} [fill opacity = .4]
+			%% The draw command knows a lot of shapes. To make a rectangle you just need to specify two diagonal corners. Make sure you always have a semicolon at the end of your draw commands, otherwise latex flips out.
+			\draw (-5,6) rectangle (6.8,-4);
+			%% Similarly, you can make a circle by specifying the center and then the radius. You can also add a fill color, but if you're printing in black and white you'll probably want to remove that line.
+			\draw[fill=myblue, draw = black] (-0.5,1) circle (3);
+			\draw[fill=myred, draw = black] (2.5,1) circle (3);
+			%% We can use the node command to label points. If you put your cursor on "LARGE" or "textbf" a box will drop down with size and text style options.
+			\node[color=myblue] at (-3,5) {\LARGE\textbf{$1 = P $}};
+			\node[color=myred] at (3,5) {\LARGE\textbf{$3 = Q$}};
+		\end{scope}
+		\node[color=violet] at (0.8,-3){\LARGE\textbf{$2 =(P \vee Q)$}};
+		\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
+		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \land (P \vee Q)$ siendo que esto es equivalente a $P$ \\
+			$P \land \big(P \vee Q\big) \equiv P$.};
+		%% And now you have a venn diagram. Yay!
+		%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
+	\end{tikzpicture}
+	
+	\vspace{6pt}
+	%% This block is what you'll need to put in your code where you want your picture.
+\begin{tikzpicture}[scale=0.5pt]
+	%% You can adjust the opacity here. For venn diagrams it is convenient to have a low opacity so that you can see intersections
+	\begin{scope} [fill opacity = .4]
+		%% The draw command knows a lot of shapes. To make a rectangle you just need to specify two diagonal corners. Make sure you always have a semicolon at the end of your draw commands, otherwise latex flips out.
+		\draw (-5,6) rectangle (6.8,-4);
+		%% Similarly, you can make a circle by specifying the center and then the radius. You can also add a fill color, but if you're printing in black and white you'll probably want to remove that line.
+		\draw[fill=myblue, draw = black] (-0.5,1) circle (3);
+		\draw[fill=myred, draw = black] (2.5,1) circle (3);
+		%% We can use the node command to label points. If you put your cursor on "LARGE" or "textbf" a box will drop down with size and text style options.
+		\node[color=myblue] at (-3,5) {\LARGE\textbf{$1 = P $}};
+		\node[color=myred] at (3,5) {\LARGE\textbf{$3 = Q$}};
+	\end{scope}
+	\node[color=violet] at (0.8,-3){\LARGE\textbf{$2 =(P \land Q)$}};
+	
+	\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
+	{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \land (P \vee Q)$ siendo que esto es equivalente a $P$ \\
+		$P \land \big(P \vee Q\big) \equiv P$.};
+	%% And now you have a venn diagram. Yay!
+	%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
+\end{tikzpicture}
+\end{center}
+
+\pagebreak
+
+\subsection*{Propiedades de Semi-Absorción.}
+
+
+\begin{center}
+	\begin{tikzpicture}[scale=0.5pt]
+		%% You can adjust the opacity here. For venn diagrams it is convenient to have a low opacity so that you can see intersections
+		\begin{scope} [fill opacity = .4]
+			%% The draw command knows a lot of shapes. To make a rectangle you just need to specify two diagonal corners. Make sure you always have a semicolon at the end of your draw commands, otherwise latex flips out.
+			\draw[fill opacity=.2, fill=myorange] (-5,6) rectangle (7.5,-4);
+			%% Similarly, you can make a circle by specifying the center and then the radius. You can also add a fill color, but if you're printing in black and white you'll probably want to remove that line.
+			\draw[fill=myblue, draw = black] (-0.5,1) circle (3);
+			\draw[fill=myred, draw = black] (2.5,1) circle (3);
+			%% We can use the node command to label points. If you put your cursor on "LARGE" or "textbf" a box will drop down with size and text style options.
+			\node[color=myblue] at (-3,5) {\LARGE\textbf{$1 = P$}};
+			\node[color=white] at (1.5,-3) {\LARGE\textbf{$2 = P \vee Q$}};
+			\node[color=myorange] at (-1.2,6.7) {\LARGE\textbf{$4 = (\sim P\lor Q)$}};
+			\node[color=myred] at (5.5,5) {\LARGE\textbf{$3 = Q$}};
+		\end{scope}
+		\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
+		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \land (\sim P \vee Q)$ siendo que esto es equivalente a $P$ y $Q$ \\
+			$P \land \big(\sim P \vee Q\big) \equiv P\land Q$.};
+		%% And now you have a venn diagram. Yay!
+		%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
+	\end{tikzpicture}
+	
+	\vspace{6pt}
+	\begin{tikzpicture}[scale=0.5pt]
+		%% You can adjust the opacity here. For venn diagrams it is convenient to have a low opacity so that you can see intersections
+		\begin{scope} [fill opacity = .4]
+			%% The draw command knows a lot of shapes. To make a rectangle you just need to specify two diagonal corners. Make sure you always have a semicolon at the end of your draw commands, otherwise latex flips out.
+			\draw[fill opacity=.2, fill=myorange] (-5,6) rectangle (7.5,-4);
+			%% Similarly, you can make a circle by specifying the center and then the radius. You can also add a fill color, but if you're printing in black and white you'll probably want to remove that line.
+			\draw[fill=myblue, draw = black] (-0.5,1) circle (3);
+			\draw[fill=myred, draw = black] (2.5,1) circle (3);
+			%% We can use the node command to label points. If you put your cursor on "LARGE" or "textbf" a box will drop down with size and text style options.
+			\node[color=myblue] at (-3,5) {\LARGE\textbf{$1 = P$}};
+			\node[color=white] at (1.5,-3) {\LARGE\textbf{$2 = P \land Q$}};
+			\node[color=myorange] at (-1.2,6.7) {\LARGE\textbf{$4 = (\sim P\lor Q)$}};
+			\node[color=myred] at (5.5,5) {\LARGE\textbf{$3 = Q$}};
+		\end{scope}
+		\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
+		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \vee (\sim P \land Q)$ siendo que esto es equivalente a $P$ ó $Q$ \\
+		\begin{center}
+				$\underbrace{P}_\textrm{1,2} \land \big(\underbrace{\sim P}_\textrm{3,4} \hspace{3pt} \vee \underbrace{Q}_\textrm{2,3}\big) \equiv P\vee Q$.
+		\end{center}
+		};
+		%% And now you have a venn diagram. Yay!
+		%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
+	\end{tikzpicture}
+\end{center}
+
+\subsection*{Propiedad de morgan.}
+
+
+\begin{frm-thm}
+	Esta propiedad se mete con los implica $\Rightarrow$, de forma que podemos convertirlos en expresiones mucho mas faciles de resolver sin tener que pensar en la tabla del implica.
+	\begin{center}
+		\begin{equation*}
+			\big(P \Rightarrow Q\big) \equiv \big(\sim P \vee Q\big)
+		\end{equation*}
+	\end{center}
+\end{frm-thm}
+
+\pagebreak
+
+\section*{Ejercicio hecho.}
+\subsubsection*{Ejercicio de ejemplo.}
+
+\begin{gather*}
+	\sim\big(Q \Rightarrow P\big) \Rightarrow \big((P \vee Q) \Rightarrow (Q \land \sim P)\big) 
+\end{gather*}
+
+\begin{gather*}
+	\underbrace{\sim\big(Q \Rightarrow P\big)}_\textrm{P} \Rightarrow \underbrace{\big((P \vee Q) \Rightarrow (Q \land \sim P)\big)}_\textrm{Q}
+\end{gather*}
+
+\begin{gather}
+	\sim\big(Q \Rightarrow P\big) \Rightarrow \big((P \vee Q) \Rightarrow (Q \land \sim P)\big) \\
+	\sim(Q \vee P) \vee \big((P \vee Q) \Rightarrow (Q \land \sim P)\big) \\
+	\sim(Q \vee P) \vee \big(\sim(P \vee Q) \vee (Q \land \sim P) \big) \\
+	\sim(\sim Q \vee \sim P) \vee \big((\sim P \land \sim Q) \vee (Q \land \sim P)\big) \\
+	(Q \land \sim P) \vee \big((\sim P \land \sim Q) \vee (\sim P \land Q)\big) \\
+	\sim P \land (\sim Q \vee Q) \\
+	\sim P \land \mathds{V} \equiv Absorcion \\
+	(\sim P \land Q) \vee \sim P \equiv \sim P
+\end{gather} En\footnote[2]{Fecha de modificación y adición al 2/4/2024}
+
+
+
+
+
+
+
 
 
 
