@@ -391,10 +391,10 @@ Entonces, con estas lógicas algebraicas podemos deducir 3 cosas, si son Tautolo
 			P Q | r | P \lor Q | P \lor Q \Rightarrow r  
 		}{  V V V \bs V \bs \bs V \bs \bs \\
 			V V F \bs V \bs \bs F \bs \bs \\
-			V F V \bs F \bs \bs V \bs \bs \\
-			V F F \bs F \bs \bs V \bs \bs \\
-			F V V \bs F \bs \bs V \bs \bs \\
-			F V F \bs F \bs \bs V \bs \bs \\
+			V F V \bs V \bs \bs V \bs \bs \\
+			V F F \bs V \bs \bs F \bs \bs \\
+			F V V \bs V \bs \bs V \bs \bs \\
+			F V F \bs V \bs \bs F \bs \bs \\
 			F F V \bs F \bs \bs V \bs \bs \\
 			F F F \bs F \bs \bs V
 		}
@@ -511,9 +511,9 @@ Entre muchas otras, estas son las que mas se suelen usar.
 
 \begin{frm-thm}
 	\begin{equation*}
-		P \land(Q \lor R) \equiv (P \land Q) \lor (P \lor Q)
+		P \land(Q \lor R) \equiv (P \lor Q) \land (P \lor R)
 	\end{equation*}
-	lo que platea la teoria es que $P$ y (Q O R) es equivalente a (P y R) ó (P ó Q) siendo que la $P$ se reparte entre Q y R.
+	lo que platea la teoría es que $P$ y (Q ó R) es equivalente a (P ó Q) y (P ó R) siendo que la $P$ se reparte entre Q y R.
 \end{frm-thm}
 
 
@@ -620,8 +620,8 @@ Entre muchas otras, estas son las que mas se suelen usar.
 	\node[color=violet] at (0.8,-3){\LARGE\textbf{$2 =(P \land Q)$}};
 	
 	\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
-	{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \land (P \vee Q)$ siendo que esto es equivalente a $P$ \\
-		$P \land \big(P \vee Q\big) \equiv P$.};
+	{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \lor (P \land Q)$ siendo que esto es equivalente a $P$ \\
+		$P \lor \big(P \land Q\big) \equiv P$.};
 	%% And now you have a venn diagram. Yay!
 	%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
 \end{tikzpicture}
@@ -648,7 +648,7 @@ Entre muchas otras, estas son las que mas se suelen usar.
 			\node[color=myred] at (5.5,5) {\LARGE\textbf{$3 = Q$}};
 		\end{scope}
 		\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
-		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \land (\sim P \vee Q)$ siendo que esto es equivalente a $P$ y $Q$ \\
+		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \lor (\sim P \vee Q)$ siendo que esto es equivalente a $P$ y $Q$ \\
 			$P \land \big(\sim P \vee Q\big) \equiv P\land Q$.};
 		%% And now you have a venn diagram. Yay!
 		%\draw[help lines](-5,5) grid (5,-6);    This line can draw the grid lines to help guide you. I use these when I'm writing the code and then delete this line when I publish the pdf.
@@ -672,7 +672,7 @@ Entre muchas otras, estas son las que mas se suelen usar.
 		\node at (6,3) [right=1cm,text width=6cm,rounded corners,inner sep=1ex,]
 		{Esto es un diagrama de venn explicando de forma gráfica como seria la composición lógica de $P \vee (\sim P \land Q)$ siendo que esto es equivalente a $P$ ó $Q$ \\
 		\begin{center}
-				$\underbrace{P}_\textrm{1,2} \land \big(\underbrace{\sim P}_\textrm{3,4} \hspace{3pt} \vee \underbrace{Q}_\textrm{2,3}\big) \equiv P\vee Q$.
+				$\underbrace{P}_\textrm{1,2} \vee \big(\underbrace{\sim P}_\textrm{3,4} \hspace{3pt} \land \underbrace{Q}_\textrm{2,3}\big) \equiv P\vee Q$.
 		\end{center}
 		};
 		%% And now you have a venn diagram. Yay!
