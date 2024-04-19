@@ -10,8 +10,7 @@
 \pgfplotsset{compat=1.16}
 \usetikzlibrary{arrows.meta}
 \usepackage{fullpage}
-\usepackage{xparse,array}
-\usetikzlibrary{circuits.ee.IEC}
+\usepackage{xparse,array} 
 \usepackage{ulem}
 \usepackage{mathtools}
 \usepackage{tikz}
@@ -29,6 +28,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{darkmode}
 \enabledarkmode
+\usepgfplotslibrary{fillbetween}
 \usepackage{framed} % or, "mdframed"
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
@@ -42,7 +42,7 @@
 \usepackage{multicol}
 \usetikzlibrary{arrows, shapes.gates.logic.US, calc}
 \usetikzlibrary{calc,arrows.meta}
-\usepackage[most]{tcolorbox}
+\usepackage{tcolorbox}
 \definecolor{p1}{HTML}{caf0f8}
 \definecolor{p2}{HTML}{ade8f4}
 \definecolor{p3}{HTML}{90e0ef}
@@ -177,7 +177,7 @@
 	\end{framed}
 \end{center}	
 
-\section{Ejemplo.}
+\section*{Ejemplo.}
 \vspace{0.3cm}
 Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalmente es utilizada para explicar el tema.
 
@@ -187,33 +187,34 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 		\end{equation*}
 		\begin{center}
 			\begin{tikzpicture}[scale=0.9]
-				\begin{axis}[axis lines=center, minor tick num=3]
-					\addplot[samples=80, smooth, thick, domain=0:10]
-					{sqrt(x-1)};
-					
-				\end{axis}
+				 \begin{axis}[axis lines=center, minor tick num=3]
+				 	
+				 	\addplot[samples=80, smooth, thick, domain=0:10, mydeeporange] 
+				 	{sqrt(x)};
+				 	
+				 \end{axis}
 			\end{tikzpicture}
 		\end{center}
 	\end{framed}
 	
-	\subsubsection{Desarrollo.}
+	\section{Desarrollo.}
 	
 	
 	$h: D_h \rightarrow \mathbb{R} / h(x) = \sqrt{x-1}$
 	
 	\begin{center}
-		\begin{equation}
+		\begin{equation*}
 			\sqrt{x-1} \rightarrow x \geq 0
-		\end{equation}
-		\begin{equation}
+		\end{equation*}
+		\begin{equation*}
 			x-1 \geq 0 
-		\end{equation}
-		\begin{equation}
+		\end{equation*}
+		\begin{equation*}
 			x \geq 1
-		\end{equation}
-		\begin{equation}
+		\end{equation*}
+		\begin{equation*}
 			D_h = [1;+\infty) \hspace{0.2cm} \neq \hspace{0.2cm} \mathbb{R}^+ - \left\{1\right\} \footnote{Siendo la primera la forma correcta de como se expresa un segmento en una recta real, la segunda forma es la equivocada}
-		\end{equation}
+		\end{equation*}
 		\begin{equation*}
 			Imgf = \mathbb{R}^+ \Leftrightarrow [0;+\infty]
 		\end{equation*} 
@@ -250,7 +251,7 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 	\pagebreak
 	
 	
-	\section{Ejemplo}
+	\section*{Ejemplo}
 	
 		\begin{framed}
 			\begin{center}
@@ -305,7 +306,7 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 		
 		\pagebreak
 		
-		\section{Función Lineal.}
+		\section*{Función Lineal.}
 	\begin{framed}
 		\begin{equation*}
 			y=mx+b
@@ -366,9 +367,9 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 	\end{center} 
 	Lo escrito arriba, en lenguaje coloquial define que es el conjunto de ceros, en síntesis dice que el conjunto de cero es cuando la función es igual a cero en donde x pertenece al dominio de la función tal que la función es igual a cero.
 	\pagebreak
-	\section{Función Lineal.}
+	\section*{Función Lineal.}
 	\vspace{5pt}
-	$C\uparrow$ es el conjunto de positividad de una función, determina donde una funcion esta por encima del eje de las abscisas ó $x$.
+	$C\uparrow$ es el conjunto de positividad de una función, determina donde una función esta por encima del eje de las abscisas ó $x$.
 	\begin{center}
 		\begin{equation*}
 			C\uparrow = f(x) > 0 = C+ = {x\in Df / f(x) > 0} \hspace{1cm} C\uparrow=[X_0;+\infty]
@@ -409,15 +410,15 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 		\frac{-m}{b}x + \frac{y}{b} = 1
 	\end{equation*}
 	\pagebreak
-	\section{Función Lineal.}
+	\section*{Función Lineal.}
 	podemos deducir que: 
 	\begin{center}
-		\begin{flalign*}
-		& y = \frac{2}{3}x -4&\\
-		& y -\frac{2}{3}x = -4&\\
-		& \frac{y}{-4} + \frac{2x}{4 \cdot 3}= 1&\\
-		& \frac{y}{-4} + \frac{x}{6} = 1
-	\end{flalign*}
+		\begin{gather}
+			 y = \frac{2}{3}x -4\\
+			 y -\frac{2}{3}x = -4\\
+			 \frac{y}{-4} + \frac{2x}{4 \cdot 3}= 1\\
+			 \frac{y}{-4} + \frac{x}{6} = 1
+		\end{gather}
 	\end{center}
 	
 	siendo -4 y 6 dos valores notables que si graficaramos la función darian exactamente en la raiz de la funcion $C_0$ y la O.O (ordenada al origen).
@@ -435,9 +436,173 @@ Como ejemplo se utilizo una función raíz cuadrada de lo mas conocida, generalm
 	\end{center}
 	\end{framed}
 	
+	\section*{Estudio de Una fucción: Lineal.}
 	
+	Hay varios tipos de estudios de una función, generalmente se utilizan para conocer informaciones primordiales de una función, se puede definir de dos formas, o lo hacemos visualizando el grafico que dicho de paso, esto se presta a libre interpretacion y no es tan exacto, pero si existe la forma algebraica que nos permite ser exactos en las deficiones de un estudio.
 	
+	\pagebreak
 	
+	\section{Estudio de f(x): Lineal.}
 	
+	\begin{figure}[!htb]
+		\begin{minipage}{0.48\textwidth}
+			\centering
+		\fbox{
+		\begin{tikzpicture}[scale=1.01, >=Latex]
+			
+			\draw[thin, ->] (1.2,0) -- (1.2,5.4) node[below left]{$f(x)$};
+			\draw[thin, ->] (0,1.2) -- (5.4,1.2) node[below left]{$x$};
+				\draw[<->] (-0.852735639793,-0.0431534835389) -- (4,4);
+				\node at (0.7,2) {$(0;b)$};
+				\filldraw[white] (1.2,1.67) circle [radius=1.2pt];
+		\end{tikzpicture}
+		}
+			\caption{Función con respecto a su ordenada al origen.}\label{Fig:Data1}
+		\end{minipage}\hfill
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\fbox{
+			\begin{tikzpicture}[scale=0.88, >=Latex]
+				%\draw[step=1cm,gray,very thin] (-1,-1) grid (6,6);
+				\draw[thin,->] (-3,0) -- (4.5,0) node[below left] {$x$};
+				\draw[thin,->] (0,-1.5) -- (0,4.5) node[below left] {$y$};
+				\foreach \x in {}
+				\draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+				\foreach \y in {}
+				\draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+				\draw[<->] (-2.2,-1) -- (4,4);
+				\draw (2.9,2) -- (2.9,3.1);
+				\node at (3.38,2.5){$\varDelta y$};
+				\node at (2.3,1.7){$\varDelta x$};
+				\draw (2.9,2) coordinate (A) -- (1.5,2) coordinate (B) -- (2.9,3.12) coordinate (C)
+				pic ["$\alpha$", draw, angle eccentricity=1.4] {angle};
+				\filldraw[white] (2.9,2) circle [radius=1pt]
+				(1.5,2) circle [radius=1pt]
+				(2.9,3.1) circle [radius=1pt]
+				(0,0.8) circle [radius=1.5pt]
+				(-0.99,0) circle [radius=1.5pt];
+				\draw[dotted] (1.5,0) -- (1.5,2) -- (0,2) ;
+				\draw[dotted] (2.9,0) -- (2.9,3.11) -- (0,3.11);
+				\node at (-0.3,3) {$y_2$};
+				\node at (2.9,-0.3) {$x_2$};
+				\node at (1.5,-0.3) {$x_1$};
+				\node at (-0.3,2) {$y_1$};
+				\node at (1.5,2.25) {$P$};
+				\node at (2.9,3.4) {$Q$};
+				\node at (-0.5,0.9) {$(0;b)$};
+				\node at (-0.99,-0.5) {$C_0$};
+			\end{tikzpicture}
+			}
+			\caption{función con respecto a sus características de estudio.}\label{Fig:Data2}
+		\end{minipage}
+	\end{figure}
+	\subsection*{Estudio de una Función.}
+	\pagebreak
+	\subsubsection*{Conjuntos, +, -, 0}
+	
+	\begin{frm-thm}
+		Conjunto de Positividad, se da cuando f(x) $>$ 0, osea cuando la función es  mayor a cero.
+		\begin{gather*}
+			C^{+} = {x \in D_f / f(x)>0}
+		\end{gather*}
+	\end{frm-thm}
+		\begin{frm-thm}
+		Conjunto de Positividad, se da cuando f(x) $<$ 0, osea cuando la función es  menor a cero.
+		\begin{gather*}
+			C_{-}  = {x \in D_f / f(x)<0}
+		\end{gather*}
+	\end{frm-thm}
+	\begin{frm-thm}
+		Conjunto de ceros o raíces, se da cuando f(x) $=$ 0, osea cuando la función es  igual a cero.
+		\begin{gather*}
+			C_{0} = {x \in D_f / f(x)=0}
+		\end{gather*}
+	\end{frm-thm}
+	\begin{frm-thm}
+	  Ordenada al origen, se da cuando f(x) es f(0), osea cuando la función es remplazada por f(0)
+		\begin{gather*}
+			O.O = {x \in D_f / f(0)}
+		\end{gather*}
+	\end{frm-thm}
+	\hspace{0.5cm}
+	\begin{figure}[!tbh]
+		\begin{minipage}{0.48\textwidth}
+				\begin{gather*}
+					C^{+} = {x \in D_f / f(x)>0}
+				\end{gather*}
+					\begin{tikzpicture}[scale=0.78]% function
+						%\draw[very thin, gray!30, step=1 cm](-4.9,-3.9) grid (4.9,3.9);
+						\fill [gray, domain=-2:4, variable=\x]
+						(0, 0)
+						-- plot ({\x}, {\x})
+						-- (4, 0)
+						-- cycle;
+						
+						\draw [thick] [<->] (-5,0)--(5,0) node[right, below] {$x$};
+						\foreach \x in {-4,...,4}
+						\draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$}; % variable a cambiar dependiendo de la funcion
+						
+						\draw [thick] [<->] (0,-4)--(0,4) node[above, left] {$y$};
+						\foreach \y in {-3,...,3}
+						\draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[left] {$\y$};
+						
+						\draw[<->] [domain=-2:4, variable=\x]
+						plot ({\x}, {\x}) node[right] at (0.6,3) {$f(x)=x$}; % variable a cambiar dependiendo de la funcion
+					\end{tikzpicture}
+		\end{minipage}\hfill
+		\begin{minipage}{0.48\textwidth}
+				\begin{gather*}
+					C_{-} = {x \in D_f / f(x)<0}
+				\end{gather*}
+					\begin{tikzpicture}[scale=0.78]% function
+						%\draw[very thin, gray!30, step=1 cm](-4.9,-3.9) grid (4.9,3.9);
+						\fill [gray, domain=-4:0, variable=\x]
+						(-4, 0)
+						-- plot ({\x}, {\x})
+						-- (0, 0)
+						-- cycle;
+						
+						\draw [thick] [<->] (-5,0)--(5,0) node[right, below] {$x$};
+						\foreach \x in {-4,...,4}
+						\draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$}; % variable a cambiar dependiendo de la funcion
+						
+						\draw [thick] [<->] (0,-4)--(0,4) node[above, left] {$y$};
+						\foreach \y in {-3,...,3}
+						\draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[right] {$\y$};
+						
+						\draw[<->] [domain=-4:2, variable=\x]
+						plot ({\x}, {\x}) node[right] at (-2.5,-3) {$f(x)=x$}; % variable a cambiar dependiendo de la funcion
+					\end{tikzpicture}
+		\end{minipage}
+	\end{figure}
+	\hspace*{3cm}
+	\begin{minipage}{0.48\textwidth}
+		\begin{gather*}
+		C_{0} = {x \in D_f / f(x)=0}
+	\end{gather*}
+\begin{center}
+	\begin{tikzpicture}[scale=0.78]% function
+		%\draw[very thin, gray!30, step=1 cm](-4.9,-3.9) grid (4.9,3.9)
+		
+		\draw [thick] [<->] (-5,0)--(5,0) node[right, below] {$x$};
+		\foreach \x in {-4,...,4}
+		\draw[xshift=\x cm, thick] (0pt,-1pt)--(0pt,1pt) node[below] {$\x$}; % variable a cambiar dependiendo de la funcion
+		
+		\draw [thick] [<->] (0,-4)--(0,4) node[above, left] {$y$};
+		\foreach \y in {-3,...,3}
+		\draw[yshift=\y cm, thick] (-1pt,0pt)--(1pt,0pt) node[right] {$\y$};
+		
+		\draw[<->] [domain=-3:3, variable=\x]
+		plot ({\x}, {\x}) node[right] at (2.4,2) {$f(x)=x$}; % variable a cambiar dependiendo de la funcion
+		 \filldraw (0,0) circle (3pt);
+	\end{tikzpicture}
+\end{center}
+	\end{minipage}
+	\pagebreak
+	
+
+
+
+
 	
 \end{document}

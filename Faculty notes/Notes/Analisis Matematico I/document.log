@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.29)  30 MAR 2024 02:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.19)  19 APR 2024 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,73 +913,47 @@ File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip57
 )
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries/circuits\tikzlibrarycircuits.ee.IEC.code.tex
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen343
-))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries/circuits\tikzlibrarycircuits.ee.code.tex
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries/circuits\tikzlibrarycircuits.code.tex
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarydecorations.markings.code.tex
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
-ions\pgflibrarydecorations.markings.code.tex))
-\tikz@lib@circ@count=\count367
-\tikzcircuitssizeunit=\dimen344
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/
-circuits\pgflibraryshapes.gates.ee.code.tex))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/
-circuits\pgflibraryshapes.gates.ee.IEC.code.tex))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box79
 \UL@hyphenbox=\box80
 \UL@skip=\skip58
 \UL@hook=\toks50
-\UL@height=\dimen345
-\UL@pe=\count368
-\UL@pixel=\dimen346
+\UL@height=\dimen343
+\UL@pe=\count367
+\UL@pixel=\dimen344
 \ULC@box=\box81
 Package: ulem 2019/11/18
-\ULdepth=\dimen347
+\ULdepth=\dimen345
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count369
-\calc@Bcount=\count370
-\calc@Adimen=\dimen348
-\calc@Bdimen=\dimen349
+\calc@Acount=\count368
+\calc@Bcount=\count369
+\calc@Adimen=\dimen346
+\calc@Bdimen=\dimen347
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count371
+\calc@Ccount=\count370
 \calc@Cskip=\skip61
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count372
-\l_MT_multwidth_dim=\dimen350
+\g_MT_multlinerow_int=\count371
+\l_MT_multwidth_dim=\dimen348
 \origjot=\skip62
-\l_MT_shortvdotswithinadjustabove_dim=\dimen351
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen352
-\l_MT_above_intertext_sep=\dimen353
-\l_MT_below_intertext_sep=\dimen354
-\l_MT_above_shortintertext_sep=\dimen355
-\l_MT_below_shortintertext_sep=\dimen356
+\l_MT_shortvdotswithinadjustabove_dim=\dimen349
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen350
+\l_MT_above_intertext_sep=\dimen351
+\l_MT_below_intertext_sep=\dimen352
+\l_MT_above_shortintertext_sep=\dimen353
+\l_MT_below_shortintertext_sep=\dimen354
 \xmathstrut@box=\box82
-\xmathstrut@dim=\dimen357
+\xmathstrut@dim=\dimen355
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tikzmark\tikzlibrarytik
 zmark.code.tex
@@ -990,10 +964,10 @@ sitions in a document
 eys2e.sty
 Package: l3keys2e 2024-03-14 LaTeX2e option processing using LaTeX3 keys
 )
-\l__sn_x_dim=\dimen358
-\l__sn_y_dim=\dimen359
-\l__sn_xa_dim=\dimen360
-\l__sn_ya_dim=\dimen361
+\l__sn_x_dim=\dimen356
+\l__sn_y_dim=\dimen357
+\l__sn_xa_dim=\dimen358
+\l__sn_ya_dim=\dimen359
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -1001,17 +975,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count373
-\Gm@cntv=\count374
-\c@Gm@tempcnt=\count375
-\Gm@bindingoffset=\dimen362
-\Gm@wd@mp=\dimen363
-\Gm@odd@mp=\dimen364
-\Gm@even@mp=\dimen365
-\Gm@layoutwidth=\dimen366
-\Gm@layoutheight=\dimen367
-\Gm@layouthoffset=\dimen368
-\Gm@layoutvoffset=\dimen369
+\Gm@cnth=\count372
+\Gm@cntv=\count373
+\c@Gm@tempcnt=\count374
+\Gm@bindingoffset=\dimen360
+\Gm@wd@mp=\dimen361
+\Gm@odd@mp=\dimen362
+\Gm@even@mp=\dimen363
+\Gm@layoutwidth=\dimen364
+\Gm@layoutheight=\dimen365
+\Gm@layouthoffset=\dimen366
+\Gm@layoutvoffset=\dimen367
 \Gm@dimlist=\toks51
 
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
@@ -1023,46 +997,46 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen370
-\captionmargin=\dimen371
-\caption@leftmargin=\dimen372
-\caption@rightmargin=\dimen373
-\caption@width=\dimen374
-\caption@indent=\dimen375
-\caption@parindent=\dimen376
-\caption@hangindent=\dimen377
+\caption@tempdima=\dimen368
+\captionmargin=\dimen369
+\caption@leftmargin=\dimen370
+\caption@rightmargin=\dimen371
+\caption@width=\dimen372
+\caption@indent=\dimen373
+\caption@parindent=\dimen374
+\caption@hangindent=\dimen375
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count376
-\c@continuedfloat=\count377
+\c@caption@flags=\count375
+\c@continuedfloat=\count376
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen378
-\caption@adjustwidth@linewidth=\dimen379
+\caption@adjustwidth@hsize=\dimen376
+\caption@adjustwidth@linewidth=\dimen377
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count378
+\c@subfigure=\count377
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count379
+\c@subtable=\count378
 ) (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count380
+\c@tracingmulticols=\count379
 \mult@box=\box83
-\multicol@leftmargin=\dimen380
-\c@unbalance=\count381
-\c@collectmore=\count382
-\doublecol@number=\count383
-\multicoltolerance=\count384
-\multicolpretolerance=\count385
-\full@width=\dimen381
-\page@free=\dimen382
-\premulticols=\dimen383
-\postmulticols=\dimen384
+\multicol@leftmargin=\dimen378
+\c@unbalance=\count380
+\c@collectmore=\count381
+\doublecol@number=\count382
+\multicoltolerance=\count383
+\multicolpretolerance=\count384
+\full@width=\dimen379
+\page@free=\dimen380
+\premulticols=\dimen381
+\postmulticols=\dimen382
 \multicolsep=\skip63
 \multicolbaselineskip=\skip64
 \partial@page=\box84
 \last@line=\box85
 \mc@boxedresult=\box86
-\maxbalancingoverflow=\dimen385
+\maxbalancingoverflow=\dimen383
 \mult@rightbox=\box87
 \mult@grightbox=\box88
 \mult@firstbox=\box89
@@ -1103,22 +1077,22 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box124
 \@tempa=\box125
 \@tempa=\box126
-\c@minrows=\count386
-\c@columnbadness=\count387
-\c@finalcolumnbadness=\count388
-\last@try=\dimen386
-\multicolovershoot=\dimen387
-\multicolundershoot=\dimen388
+\c@minrows=\count385
+\c@columnbadness=\count386
+\c@finalcolumnbadness=\count387
+\last@try=\dimen384
+\multicolovershoot=\dimen385
+\multicolundershoot=\dimen386
 \mult@nat@firstbox=\box127
 \colbreak@box=\box128
-\mc@col@check@num=\count389
+\mc@col@check@num=\count388
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip65
-\multirow@cntb=\count390
+\multirow@cntb=\count389
 \multirow@dima=\skip66
-\bigstrutjot=\dimen389
+\bigstrutjot=\dimen387
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.s
 ty
@@ -1136,37 +1110,37 @@ File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 nonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen390
+\pgftransformnonlinearflatness=\dimen388
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 arycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen391
-\pgf@curvilinear@length@a=\dimen392
-\pgf@curvilinear@length@b=\dimen393
-\pgf@curvilinear@length@c=\dimen394
-\pgf@curvilinear@length@d=\dimen395
+\pgf@curvilinear@time@a=\dimen389
+\pgf@curvilinear@length@a=\dimen390
+\pgf@curvilinear@length@b=\dimen391
+\pgf@curvilinear@length@c=\dimen392
+\pgf@curvilinear@length@d=\dimen393
 )
-\pgf@arrows@the@rigidity=\dimen396
+\pgf@arrows@the@rigidity=\dimen394
 ))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryfpu.code.tex)
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.de
 fines.tex
-\pgf@circ@count@a=\count391
-\pgf@circ@count@b=\count392
-\pgf@circ@count@c=\count393
-\pgf@circ@res@up=\dimen397
-\pgf@circ@res@down=\dimen398
-\pgf@circ@res@zero=\dimen399
-\pgf@circ@res@left=\dimen400
-\pgf@circ@res@right=\dimen401
-\pgf@circ@res@other=\dimen402
-\pgf@circ@res@step=\dimen403
-\pgf@circ@res@temp=\dimen404
-\pgf@circ@Rlen=\dimen405
-\pgf@circ@scaled@Rlen=\dimen406
-\pgfstartlinewidth=\dimen407
+\pgf@circ@count@a=\count390
+\pgf@circ@count@b=\count391
+\pgf@circ@count@c=\count392
+\pgf@circ@res@up=\dimen395
+\pgf@circ@res@down=\dimen396
+\pgf@circ@res@zero=\dimen397
+\pgf@circ@res@left=\dimen398
+\pgf@circ@res@right=\dimen399
+\pgf@circ@res@other=\dimen400
+\pgf@circ@res@step=\dimen401
+\pgf@circ@res@temp=\dimen402
+\pgf@circ@Rlen=\dimen403
+\pgf@circ@scaled@Rlen=\dimen404
+\pgfstartlinewidth=\dimen405
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircuti
 ls.tex
@@ -1182,7 +1156,7 @@ opoles.tex)
 oles.tex)
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctri
 poles.tex
-\pgf@circ@res@count=\count394
+\pgf@circ@res@count=\count393
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircqua
 dpoles.tex)
@@ -1192,12 +1166,38 @@ tipoles.tex)
 el.tex)
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvol
 tage.tex
-\pgfcirc@labelshift=\dimen408
+\pgfcirc@labelshift=\dimen406
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccur
 rent.tex)
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflo
 w.tex))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries/circuits\tikzlibrarycircuits.ee.IEC.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen407
+))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries/circuits\tikzlibrarycircuits.ee.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries/circuits\tikzlibrarycircuits.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.markings.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.markings.code.tex))
+\tikz@lib@circ@count=\count394
+\tikzcircuitssizeunit=\dimen408
+)
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/
+circuits\pgflibraryshapes.gates.ee.code.tex))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/
+circuits\pgflibraryshapes.gates.ee.IEC.code.tex))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
@@ -1329,7 +1329,24 @@ aTeX document.
 
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/pagecolor\pagecolor.sty
 Package: pagecolor 2023-04-18 v1.2c Provides thepagecolor (HMM)
-)) (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
+rarypgfplots.fillbetween.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\t
+ikzlibraryfillbetween.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryintersections.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryintersections.code.tex
+\pgf@intersect@solutions=\count406
+))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\t
+ikzlibrarydecorations.softclip.code.tex
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\p
+gflibraryfillbetween.code.tex)))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
+rarypgfplots.decorations.softclip.code.tex))
+(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip68
 \fb@frw=\dimen413
@@ -1444,26 +1461,26 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen423
 \TX@target=\dimen424
 \TX@delta=\dimen425
-\TX@cols=\count406
+\TX@cols=\count407
 \TX@ftn=\toks71
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
-Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+Package: microtype 2024/03/29 v3.1b Micro-typographical refinements (RS)
 \MT@toks=\toks72
 \MT@tempbox=\box130
-\MT@count=\count407
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
-LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@count=\count408
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1061.
+LaTeX Info: Redefining \leftprotrusion on input line 1062.
 \MT@prot@toks=\toks73
-LaTeX Info: Redefining \rightprotrusion on input line 1078.
-LaTeX Info: Redefining \textls on input line 1368.
+LaTeX Info: Redefining \rightprotrusion on input line 1081.
+LaTeX Info: Redefining \textls on input line 1392.
 \MT@outer@kern=\dimen426
-LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count408
+LaTeX Info: Redefining \textmicrotypecontext on input line 2013.
+\MT@listname@count=\count409
 
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
 tex.def
-File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2024/03/29 v3.1b Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 902.
 LaTeX Info: Redefining \lslig on input line 902.
@@ -1472,7 +1489,7 @@ LaTeX Info: Redefining \lslig on input line 902.
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
-File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+File: microtype.cfg 2024/03/29 v3.1b microtype main configuration file (RS)
 ))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.gates.logic.US.code.tex
@@ -1501,155 +1518,21 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box132
 \tcb@lowerbox=\box133
 \tcb@phantombox=\box134
-\c@tcbbreakpart=\count409
-\c@tcblayer=\count410
-\c@tcolorbox@number=\count411
+\c@tcbbreakpart=\count410
+\c@tcblayer=\count411
+\c@tcolorbox@number=\count412
 \l__tcobox_tmpa_box=\box135
 \l__tcobox_tmpa_dim=\dimen427
 \tcb@temp=\box136
 \tcb@temp=\box137
 \tcb@temp=\box138
 \tcb@temp=\box139
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
-e.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
-\c@tcbrastercolumn=\count412
-\c@tcbrasterrow=\count413
-\c@tcbrasternum=\count414
-\c@tcbraster=\count415
 )
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
-.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
-.sty
-Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-commo
-n.sty
-Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
-l.image.code.tex
-File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box140
-))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
-w.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
-))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
-code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
-Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
-)
-Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box141
-\tcb@totalupperbox=\box142
-\tcb@totallowerbox=\box143
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
-.tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
-ode.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
-de.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
-\tcbfitdim=\dimen428
-\tcb@lowerfitdim=\dimen429
-\tcb@upperfitdim=\dimen430
-\tcb@cur@hbadness=\count416
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
-f8.code.tex
-Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.c
-ode.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count417
-\lst@gtempboxa=\box144
-\lst@token=\toks76
-\lst@length=\count418
-\lst@currlwidth=\dimen431
-\lst@column=\count419
-\lst@pos=\count420
-\lst@lostspace=\dimen432
-\lst@width=\dimen433
-\lst@newlines=\count421
-\lst@lineno=\count422
-\lst@maxwidth=\dimen434
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
-\c@lstnumber=\count423
-\lst@skipnumbers=\count424
-\lst@framebox=\box145
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2024/03/11 1.10a listings configuration
-))
-Package: listings 2024/03/11 1.10a (Carsten Heinz)
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsco
-re.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing
-.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
-)
-\c@tcblisting=\count425
-))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
-f8.sty
-Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.c
-ode.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.c
-ode.tex
-Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
-)
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.c
-ode.tex
-Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryfadings.code.tex
-File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.cod
-e.tex
-Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
-))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries/graphs\tikzlibrarygraphs.code.tex
 File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\tikz@lib@auto@number=\count426
-\tikz@qnode@count=\count427
+\tikz@lib@auto@number=\count413
+\tikz@qnode@count=\count414
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryshapes.misc.code.tex
@@ -1661,9 +1544,9 @@ File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
-\everycr=\toks77
+\everycr=\toks76
 \minrowclearance=\skip87
-\rownum=\count428
+\rownum=\count415
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
@@ -1684,14 +1567,14 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count429
+\c@abspage=\count416
 Package zref Info: New property: abspage on input line 67.
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip88
-\c@mdf@globalstyle@cnt=\count430
+\c@mdf@globalstyle@cnt=\count417
 \mdf@skipabove@length=\skip89
 \mdf@skipbelow@length=\skip90
 \mdf@leftmargin@length=\skip91
@@ -1735,11 +1618,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box146
-\mdf@footnotebox=\box147
-\mdf@splitbox@one=\box148
-\mdf@splitbox@two=\box149
-\mdf@splitbox@save=\box150
+\mdf@frametitlebox=\box140
+\mdf@footnotebox=\box141
+\mdf@splitbox@one=\box142
+\mdf@splitbox@two=\box143
+\mdf@splitbox@save=\box144
 \mdfsplitboxwidth=\skip128
 \mdfsplitboxtotalwidth=\skip129
 \mdfsplitboxheight=\skip130
@@ -1767,19 +1650,19 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip152
 \mdfsubtitleheight=\skip153
 \mdfsubsubtitleheight=\skip154
-\c@mdfcountframes=\count431
+\c@mdfcountframes=\count418
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count432
-\c@mdf@env@i=\count433
-\c@mdf@env@ii=\count434
-\c@mdf@zref@counter=\count435
+\mdf@envdepth=\count419
+\c@mdf@env@i=\count420
+\c@mdf@env@ii=\count421
+\c@mdf@zref@counter=\count422
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@frm-thm=\count436
+\c@frm-thm=\count423
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 99.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
@@ -1812,17 +1695,17 @@ LaTeX Font Info:    ... okay on input line 99.
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count437
-\scratchdimen=\dimen435
-\scratchbox=\box151
-\nofMPsegments=\count438
-\nofMParguments=\count439
-\everyMPshowfont=\toks78
-\MPscratchCnt=\count440
-\MPscratchDim=\dimen436
-\MPnumerator=\count441
-\makeMPintoPDFobject=\count442
-\everyMPtoPDFconversion=\toks79
+\scratchcounter=\count424
+\scratchdimen=\dimen428
+\scratchbox=\box145
+\nofMPsegments=\count425
+\nofMParguments=\count426
+\everyMPshowfont=\toks77
+\MPscratchCnt=\count427
+\MPscratchDim=\dimen429
+\MPnumerator=\count428
+\makeMPintoPDFobject=\count429
+\everyMPtoPDFconversion=\toks78
 )
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1881,7 +1764,6 @@ enefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 99.
 (document.out) (document.out)
@@ -1909,7 +1791,6 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\c@lstlisting=\count443
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 01.
 
@@ -2009,26 +1890,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [2{C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
 c}{C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
 c}]
-NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
-in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y1.2656998e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y2.5313995e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y3.7970993e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y5.062799e-1],3Y0.0e0]) has been dropped because it is unbou
-nded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y6.3284988e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y7.5941986e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-NOTE: coordinate (1Y8.8598984e-1],3Y0.0e0]) has been dropped because it is unbo
-unded (in y). (see also unbounded coords=jump). 
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 199.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2055,7 +1916,7 @@ unded (in y). (see also unbounded coords=jump).
 NOTE: coordinate (1Y8.8598984e-1],3Y0.0e0]) has been dropped because it is unbo
 unded (in y). (see also unbounded coords=jump). 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-70.
+71.
 (C:\Users\somia\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -2070,54 +1931,98 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [4{C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.07204pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07204pt}.
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.07204pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.07204pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07204pt}.
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.07204pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
 
 [6]
-\tf@thm=\write5
-\openout5 = `document.thm'.
 
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+[8]
+Package hyperref Info: bookmark level for unknown frm-thm defaults to 0 on inpu
+t line 504.
+
+Overfull \hbox (22.12126pt too wide) in paragraph at lines 532--552
+[] 
+ []
+
+
+Overfull \hbox (22.12126pt too wide) in paragraph at lines 556--576
+[] 
+ []
+
+
+Overfull \hbox (22.12126pt too wide) in paragraph at lines 598--599
+ [] 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.07204pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07204pt}.
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-13.07204pt}.
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
 
-[7] (document.aux)
+[9]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+[10]
+\tf@thm=\write5
+\openout5 = `document.thm'.
+
+ (document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: CFC7B0097CCB33D35FF348621444768B;726.
+(rerunfilecheck)             Checksum: 45BD0A0526C60AC233C85E8CB6029B92;352.
  ) 
 Here is how much of TeX's memory you used:
- 74055 strings out of 474424
- 1855553 string characters out of 5741739
- 2928556 words of memory out of 5000000
- 95331 multiletter control sequences out of 15000+600000
- 600488 words of font info for 108 fonts, out of 8000000 for 9000
+ 70133 strings out of 474424
+ 1758906 string characters out of 5741739
+ 2795071 words of memory out of 5000000
+ 91449 multiletter control sequences out of 15000+600000
+ 608090 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,12n,131p,1007b,2165s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,14n,131p,1007b,2212s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
@@ -2128,13 +2033,15 @@ C:/Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C
 :/Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/
 Users/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Us
 ers/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/User
+s/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/User
 s/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/User
 s/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/User
-s/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on document.pdf (7 pages, 307166 bytes).
+s/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users
+/somia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb>
+Output written on document.pdf (10 pages, 332739 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 24789 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 28709 words of extra memory for PDF output out of 29859 (max. 10000000)
 
